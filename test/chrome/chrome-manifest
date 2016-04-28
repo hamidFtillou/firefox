@@ -1,0 +1,14 @@
+content	test	chrome/content
+content	test	chrome/content	contentaccessible=yes
+overlay	chrome://browser/content/browser.xul	chrome://test/content/browser.xul
+
+locale	test	fr-FR	chrome/locale/fr-FR/
+
+skin	test	classic/1.0	chrome/skin/
+
+style	chrome://global/content/customizeToolbar.xul	chrome://skin/skin.css
+
+
+
+
+

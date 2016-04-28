@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+xmlns:html="http://www.w3.org/1999/xhtml" id="unimatel01-overlay">
+
+    
+	<script type="application/x-javascript" src="chrome://unimatel01/content/jquery-1.5.2.js"/>
+	<script type="application/x-javascript" src="chrome://unimatel01/content/jquery-ui-1.8.12.custom.min.js"/>
+	<script>$jQ = jQuery.noConflict();</script>
+   	<script type="application/x-javascript" src="chrome://unimatel01/content/unimatel01.js"></script>
+
+
+    <statusbar id="status-bar">
+        <statusbarpanel insertafter="statusbar-progresspanel" context="unimatel01-menu">
+            <image id="unimatel01-statusicon" style="cursor:pointer;"
+                src="chrome://unimatel01/content/icon.png"
+            	tooltiptext="Run unimatel01"
+            	onclick="if(!event.button) { unimatel01.run() }"
+            	/>
+		</statusbarpanel>
+
+        <menupopup id="unimatel01-menu">
+            <menuitem label="unimatel Homepage"  oncommand="unimatel01.goHome()"/>
+            <menuitem label="About" 		 oncommand="unimatel01.showAbout()" />
+            <menuseparator/>
+            <menuitem label="Run unimatel01"     oncommand="unimatel01.run()" />
+	    <menuitem label ="just do It!"   	 oncommand="unimatel01.doIt()"/>
+        </menupopup>
+
+    </statusbar>
+		
+</overlay>

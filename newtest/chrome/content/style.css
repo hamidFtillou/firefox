@@ -1,0 +1,25 @@
+.rectangle 
+{
+    background-color: #99cc00;
+    border: 2px 
+    solid #ff00ff;
+    color: #0099ff;
+    position:absolute;
+    top:0;
+    left:0;
+    padding:8px;
+}
+
+.red
+{
+  color:red;
+  font-weight:bold;
+  font-style:italic;
+}
+
+.blue
+{
+  color:blue;
+  font-weight:bold;
+  font-size:150%;    
+}

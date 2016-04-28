@@ -1,0 +1,16 @@
+{
+  "title": "New First Addon",
+  "name": "newfirst",
+  "version": "0.0.1",
+  "description": "The first One with jpm",
+  "main": "index.js",
+  "author": "Hamid Ftillou",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}

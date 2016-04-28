@@ -1,0 +1,3 @@
+content		unimatel01		chrome/content/
+
+overlay		chrome://browser/content/browser.xul		chrome://unimatel01/content/browser.xul

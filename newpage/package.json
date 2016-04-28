@@ -1,0 +1,16 @@
+{
+  "title": "newpage",
+  "name": "newpage",
+  "version": "0.0.0",
+  "description": "New page",
+  "main": "index.js",
+  "author": "Hamid Ftillou",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}

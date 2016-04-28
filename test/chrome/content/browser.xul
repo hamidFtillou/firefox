@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://test/skin/skin.css" type="text/css" ?>
+<!DOCTYPE window SYSTEM "chrome://test/locale/translations.dtd">
+<overlay id="sample" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script src="test.js"/>
+	<menupopup id="menu_ToolsPopup">
+		<menuItem label="runtest;" key="test-run-key" oncommand="linkTargetFinder.run()"/>
+	</menupopup>
+	<keyset>
+	  <key id="test-run-key" modifiers="accel alt shift" key="B" oncommand="test.run()"/>
+	</keyset>
+	<status-bar id="status-bar">
+		<statusbarpanel id="test-status-bar-icon" class="statusbarpanel-iconic" src="chrome://test/skin/status-bar.png" tooltiptext="&runtest;" onclick="test.run()"/>
+	</status-bar>
+	<toolbarpalette id="BrowserToolbarpalette">
+		<toolbarbutton id="test-toolbar-button" label="Unimatel Test" tooltiptext="&runtest;" oncommand="test.run()"/>
+	</toolbarpalette>
+</overlay>

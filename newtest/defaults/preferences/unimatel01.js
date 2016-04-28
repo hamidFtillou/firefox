@@ -1,0 +1,1 @@
+pref("extensions.unimatel01.foo", "bar");

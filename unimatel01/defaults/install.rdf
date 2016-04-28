@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>unimatel01@unimatel.net</em:id>
+    <em:name>unimatel01 first addon</em:name>
+    <em:version>1.0.0</em:version>
+    <em:type>2</em:type>
+
+    <!-- Front End Metadata -->
+    <em:creator>les comptoirs Unimatel.</em:creator>
+    <em:developer>Hamid Ftillou</em:developer>
+    <em:description>juste un exemple a first Addon example.</em:description>
+    <em:homepageURL>http://www.unimatel.net/</em:homepageURL>
+    <em:aboutURL>chrome://unimatel01/content/about.xul</em:aboutURL>
+    <em:optionsURL>chrome://unimatel01/content/preferences.xul</em:optionsURL>
+    <em:iconURL>chrome://unimatel01/content/unimatel01.png</em:iconURL>
+    <em:unpack>true</em:unpack>
+
+    <!-- Localization -->
+    <em:localized>
+      <Description>
+        <em:locale>fr-FR</em:locale>
+        <em:name>Premier Addon</em:name>
+        <em:description>Juste le premier addon.</em:description>
+      </Description>
+    </em:localized>
+    <em:localized>
+      <Description>
+        <em:locale>en-EN</em:locale>
+        <em:name>First Addon</em:name>
+        <em:description>A first addon.</em:description>
+      </Description>
+    </em:localized>
+    
+    <!-- Supported Browser Versions -->
+    
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>6.0</em:minVersion>
+        <em:maxVersion>22.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+		<!-- target: SeaMonkey version 2.0 to 2.1 -->
+	<em:targetApplication>
+	<Description>
+		<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+		<em:minVersion>2.0a</em:minVersion>
+		<em:maxVersion>2.19.*</em:maxVersion>
+	</Description>
+    </em:targetApplication>
+
+  </Description>
+</RDF>

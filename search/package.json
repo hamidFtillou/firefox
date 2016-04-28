@@ -1,0 +1,16 @@
+{
+  "title": "Recherche",
+  "name": "search",
+  "version": "0.0.1",
+  "description": "Recherche sur Google et Wikipedia",
+  "main": "main.js",
+  "author": "Hamid Ftillou",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}

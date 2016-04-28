@@ -1,0 +1,75 @@
+<?xml version='1.0'?>
+
+<?xml-stylesheet href="style.css" type="text/css"?>
+
+<window 
+   id="hello"  
+   title="Style" 
+   width="400" 
+   height="600" 
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+
+<vbox>
+
+<toolbox flex="1" height="24">
+    <menubar>
+        <menu label="Files">
+            <menupopup>
+                <menuitem label="Open"  oncommand="unimatel01.doIt()"/>
+                <menuitem label="Close" oncommand="unimatel01.goHome()"/>
+                <menuitem label="Run"   oncommand="unimatel01.doIt()"/>
+                <menuseparator />
+                <menuitem label="Quit"  />
+            </menupopup>
+        </menu>
+        <menu label="Help" >
+            <menupopup>
+                <menuitem label="Manual" />
+            </menupopup>
+        </menu>
+    </menubar>
+</toolbox>
+
+<toolbox flex="1" height="32">
+	<box>
+		<button id="myButton" class="red" label="Not clicked" oncommand="display();" />
+		<button id="btnGo" class="blue" label="Go !" oncommand="unimatel01.showAbout();" />
+		<description  class="blue"> The text in bold and 150% size</description>
+	</box>	
+</toolbox>
+
+<hbox>
+	<listbox style="color:blue">
+		<listhead>
+			<listheader label="Name"></listheader>
+			<listheader label="Age"></listheader>
+			<listheader label="City"></listheader>
+		</listhead>
+		<listcols>
+			<listcol flex="1"></listcol>
+			<listcol flex="1"></listcol>
+			<listcol flex="1"></listcol>
+		</listcols>
+		<listitem>
+			<listcell label="Julia"></listcell>
+			<listcell label="19"></listcell>
+			<listcell label="Boston"></listcell>
+		</listitem>
+		<listitem>
+			<listcell label="Sandra"></listcell>
+			<listcell label="25"></listcell>
+			<listcell label="London"></listcell>
+		</listitem>
+		<listitem>
+			<listcell label="Sharon"></listcell>
+			<listcell label="35"></listcell>
+			<listcell label="Paris"></listcell>
+		</listitem>
+	</listbox>
+	
+</hbox>
+
+</vbox>
+
+</window>

@@ -1,0 +1,16 @@
+{
+  "title": "Second - Share Objects",
+  "name": "second",
+  "version": "0.0.0",
+  "description": "Test of sharing objects between ContentScript ans pageScript",
+  "main": "main.js",
+  "author": "Hamid Ftillou",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}

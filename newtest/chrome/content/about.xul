@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window class="dialog"
+        title="Unimatel01 - About"
+        orient="vertical"
+        autostretch="always"
+        onload="sizeToContent()"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<!-- Original template by Jed Brown -->
+
+<groupbox align="center" orient="horizontal">
+<vbox>
+  <text value="unimatel01" style="font-weight: bold; font-size: x-large;"/>
+  <text value="juste un premier exemple"/>
+  <separator class="thin"/>
+  <text value="Version 1.0.0"/>
+  <separator class="thin"/>
+    <text value="Created by Hamid Ftillou:" style="font-weight: bold;"/>
+    <text value='"unimatel01" home page' class="url" style="color:blue;" onclick="window.open('http://www.unimatel.com'); window.close();"/>
+  <separator class="thin"/>
+    <text value="Hamid Ftillou:" style="font-weight: bold;"/><text value="unimatel.net" class="url" style="color:blue;" onclick="window.open('http://unimatel.com'); window.close();"/>
+    <text value="unimatel 01 1.0.0"/>
+  <separator class="thin"/>
+  <separator class="thin"/>
+  <separator class="thin"/>
+    <button label="Close" oncommand="window.close();"/>
+</vbox>
+<spring flex="1"/>
+</groupbox>
+
+</window>

@@ -1,0 +1,16 @@
+{
+  "title": "Third content-script",
+  "name": "third",
+  "version": "0.0.1",
+  "description": "Divers tests du coentent-script",
+  "main": "main.js",
+  "author": "Hamid Ftillou",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}

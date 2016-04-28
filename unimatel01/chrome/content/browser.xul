@@ -1,0 +1,130 @@
+<?xml version='1.0'?>
+
+<?xml-stylesheet href="chrome://unimatel01/content/style.css" type="text/css"?>
+
+<window 
+    id="hello"  
+    title="Style Unimatel01" 
+    width="400" 
+    height="600" 
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+
+
+
+    <vbox>
+
+        <toolbox flex="1" height="24">
+            <menubar>
+                <menu label="Files">
+                    <menupopup>
+                        <menuitem label="Open"  oncommand="unimatel01.doIt()"/>
+                        <menuitem label="Close" />
+                        <menuitem label="Run"   oncommand="unimatel01.doIt()"/>
+                        <menuseparator />
+                        <menuitem label="Quit"  oncommand="window.close();"/>
+                    </menupopup>
+                </menu>
+                <menu id="edit-menu" label="Edit">
+                    <menupopup id="edit-popup">
+                        <menuitem label="Undo"/>
+                        <menuitem label="Redo"/>
+                    </menupopup>
+                </menu>
+
+                <menu label="Help" >
+                    <menupopup>
+                        <menuitem label="Manual" />
+                    </menupopup>
+                </menu>
+            </menubar>
+            <menubar id="planets-menubar">
+                <menu id="planet-menu" label="Planet">
+                    <menupopup>
+                        <menuitem id="jupiter" label="Jupiter" type="radio" name="ringed"/>
+                        <menuitem id="saturn" label="Saturn" type="radio" name="ringed"/>
+                        <menuitem id="uranus" label="Uranus" type="radio" name="ringed"/>
+                        <menuitem id="earth" label="Earth" type="radio" name="inhabited"/>
+                    </menupopup>
+                </menu>
+            </menubar>
+
+            <toolbar id="nav-toolbar">
+                <toolbarbutton label="Back"/>
+                <toolbarbutton label="Forward"/>
+            </toolbar>
+        </toolbox>
+
+        <toolbox flex="1" height="32">
+            <popupset>
+                <popup id="backpopup" position="after_start">
+                    <menuitem label="Page 1"/>
+                    <menuitem label="Page 2"/>
+                </popup>
+            </popupset>
+            <button label="Pop Me Up" popup="backpopup"/>
+
+            <box>
+                <button id="myButton" class="red" label="Not clicked" oncommand="display();" />
+                <button id="btnGo" class="blue" label="Go !" oncommand="unimatel01.showAbout();" />
+                <description  class="blue"> The text in bold and 150% size</description>
+            </box>	
+        </toolbox>
+
+        <hbox>
+            <listbox style="color:blue">
+                <listhead>
+                    <listheader label="Name"></listheader>
+                    <listheader label="Age"></listheader>
+                    <listheader label="City"></listheader>
+                </listhead>
+                <listcols>
+                    <listcol flex="1"></listcol>
+                    <listcol flex="1"></listcol>
+                    <listcol flex="1"></listcol>
+                </listcols>
+                <listitem>
+                    <listcell label="Julia"></listcell>
+                    <listcell label="19"></listcell>
+                    <listcell label="Boston"></listcell>
+                </listitem>
+                <listitem>
+                    <listcell label="Sandra"></listcell>
+                    <listcell label="25"></listcell>
+                    <listcell label="London"></listcell>
+                </listitem>
+                <listitem>
+                    <listcell label="Sharon"></listcell>
+                    <listcell label="35"></listcell>
+                    <listcell label="Paris"></listcell>
+                </listitem>
+            </listbox>
+	
+        </hbox>
+
+    </vbox>
+    <script type="application/x-javascript" src="chrome://unimatel01/content/jquery.js"/>
+    <script type="application/x-javascript" src="chrome://unimatel01/content/unimatel01.js"/>
+    <script>
+
+        var hideFlag;
+        function display()
+        {
+        if(hideFlag == false)
+        {
+        document.getElementById("myButton").label ="Not clicked";
+        document.getElementById("btnGo").label ="Goooooo clicked";
+        hideFlag = true;
+        }	
+        else
+        {
+        document.getElementById("myButton").label ="Clicked";
+        //document.getElementById("btnGo").label ="Go !";
+        $('#go').attr("label","Dol Goooooo");  
+        hideFlag = false;
+        }	
+
+        }
+
+    </script>
+
+</window>

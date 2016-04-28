@@ -1,0 +1,65 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/*body {
+  font-family: arial
+}
+
+.helpBox {
+  background-color: white
+}*/
+
+.errorText {
+  color: red;
+  font-weight: bold
+}
+
+.msgText {
+  color: green;
+  font-weight: bold
+}
+
+treechildren::-moz-tree-checkbox {
+  /* unchecked checkbox treecells. This style MUST come before treechildren::-moz-tree-checkbox(checked) otherwise it won't take effect.  */
+  list-style-image: none;
+}
+
+treechildren::-moz-tree-checkbox(checked) {
+  /* css for checked cells. cbox-check.gif isn't available in Firefox 1, 2, and 3 on Mac OS X, so you should specify a URL to an image
+     in your extension or elsewhere. */
+  list-style-image: url("chrome://global/skin/checkbox/cbox-check.gif");
+}
+
+prefwindow {
+  -moz-binding: url("chrome://modifyheaders/content/bindings/bindings.xml#prefwindow");
+}
+
+radio[pane=paneHeaders] {
+  list-style-image:url("chrome://modifyheaders/content/icons/user.png");
+}
+radio[pane=paneOptions] {
+  list-style-image:url("chrome://modifyheaders/content/icons/tools.png");
+}
+radio[pane=paneAbout] {
+  list-style-image:url("chrome://modifyheaders/content/icons/info.png");
+}
+radio#modifyheaders-help-button, radio#modifyheaders-start-button {
+	text-align: end;
+  -moz-binding: url(chrome://global/content/bindings/preferences.xml#panebutton);
+  -moz-box-orient: vertical;
+  -moz-box-align: center
+}
+radio#modifyheaders-help-button {
+  list-style-image:url("chrome://modifyheaders/content/icons/first-aid-kit.png");
+}
+radio#modifyheaders-start-button {
+  font-weight: bold;
+  list-style-image:url("chrome://modifyheaders/content/icons/ModifyHeaders-grey-32.png");
+  padding: 0 5px;
+}
+radio#modifyheaders-start-button.started {
+  list-style-image:url("chrome://modifyheaders/content/icons/ModifyHeaders-32.png");
+}
+
+treechildren::-moz-tree-drop-feedback(dropAfter) {
+  border-bottom: 2px solid black;
+}

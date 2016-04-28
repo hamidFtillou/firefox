@@ -1,0 +1,9 @@
+#test-toolbar-button {
+list-style-image: url(chrome://test/skin/toolbar-button.png);
+}
+
+#test-status-bar-icon {
+
+	width: 83px;
+	margin: 0 5px;
+}

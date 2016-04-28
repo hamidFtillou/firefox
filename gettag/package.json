@@ -1,0 +1,16 @@
+{
+  "title": "Get Tag Jetpack Addon",
+  "name": "gettag",
+  "version": "0.0.1",
+  "description": "Get page elements",
+  "main": "main.js",
+  "author": "Hamid Ftillou",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
