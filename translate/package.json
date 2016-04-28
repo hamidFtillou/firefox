@@ -1,0 +1,16 @@
+{
+  "title": "Traduction en fr Addon",
+  "name": "translate",
+  "version": "0.0.1",
+  "description": "Traduction en FR",
+  "main": "index.js",
+  "author": "Hamid Ftillou",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
