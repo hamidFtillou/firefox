@@ -1,0 +1,16 @@
+{
+  "title": "Get WAN IP",
+  "name": "getip",
+  "version": "0.0.1",
+  "description": "get WAN IP, using unimatel web site",
+  "main": "main.js",
+  "author": "Hamid Ftillou",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
