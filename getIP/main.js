@@ -1,7 +1,7 @@
 var btn = require('sdk/ui/button/action').ActionButton({
   id: "Get_IP",
   label: "IP:",
-  icon: "./icon/play16.png",
+  icon: "./icon/myip16.png",
   onClick: function() {
       getIP();
     }
@@ -13,13 +13,13 @@ function getIP() {
       url: "http://www.unimatel.com/getWanIP.php",
       overrideMimeType: "text/plain; charset=latin1",
       onComplete: function (response) {
-        console.log("IP => "+response.text);
-        btn.label = "IP:"+response.text;
-        btn.icon  = "./icon/play16.png";
+        console.log("Status  => "+response.status);
+        btn.label = ( response.status === 200) ?
+          "IP:"+response.text : "IP: ????? ( prière de recommencer)";
+        btn.icon  = "./icon/myip16.png";
       }
     });
     req.get();
 }
+getIP();
 //====================================================================
-
-

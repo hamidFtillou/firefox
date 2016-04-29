@@ -1,7 +1,5 @@
-//fonctions content-scripts
 self.on("click",function(node,data){
   	var searchURL = data+node.textContent;
-  	console.log("Recherche de:"+searchURL);
+  	console.log("fonctions Search :"+searchURL);
   	self.port.emit("openURL", searchURL);
 });
-
